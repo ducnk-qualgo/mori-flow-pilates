@@ -949,13 +949,13 @@ button {
   border: 1px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
+  min-height: 700px;
 }
 
-.booking__iframe {
-  display: block;
+#cal-embed {
   width: 100%;
-  min-height: 750px;
-  border: none;
+  min-height: 700px;
+  overflow: auto;
 }
 
 /* ---------- FOOTER ---------- */
@@ -1346,8 +1346,12 @@ button {
     padding: 2.5rem 2rem;
   }
 
-  .booking__iframe {
-    min-height: 650px;
+  .booking__form {
+    min-height: 550px;
+  }
+
+  #cal-embed {
+    min-height: 550px;
   }
 
   .footer__top {

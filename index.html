@@ -324,15 +324,7 @@
           </div>
         </div>
         <div class="booking__form">
-          <iframe
-            src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true"
-            class="booking__iframe"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            title="Booking form"
-            loading="lazy"
-          >Loading…</iframe>
+          <div id="cal-embed"></div>
         </div>
       </div>
     </section>
@@ -397,5 +389,25 @@
   </div>
 
   <script type="module" src="/src/main.js"></script>
+
+  <!-- Cal.com Embed -->
+  <script async src="https://app.cal.com/embed/embed.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      if (typeof Cal !== 'undefined') {
+        Cal('init', { origin: 'https://app.cal.com' });
+        Cal('inline', {
+          elementOrSelector: '#cal-embed',
+          calLink: 'YOUR_USERNAME',
+          layout: 'month_view',
+          config: { theme: 'light' },
+        });
+        Cal('ui', {
+          hideEventTypeDetails: false,
+          layout: 'month_view',
+        });
+      }
+    });
+  </script>
 </body>
 </html>

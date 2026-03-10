@@ -259,25 +259,11 @@ document.querySelectorAll('.pricing__card').forEach((card, i) => {
 
 // ============ BOOKING SECTION ============
 const bookingText = document.querySelector('.booking__text');
-const bookingForm = document.querySelector('.booking__form');
 if (bookingText) {
   gsap.from(bookingText, {
     opacity: 0,
     x: -30,
     duration: 1,
-    ease: 'power3.out',
-    scrollTrigger: {
-      trigger: '.booking',
-      start: 'top 75%',
-    },
-  });
-}
-if (bookingForm) {
-  gsap.from(bookingForm, {
-    opacity: 0,
-    x: 30,
-    duration: 1,
-    delay: 0.2,
     ease: 'power3.out',
     scrollTrigger: {
       trigger: '.booking',
