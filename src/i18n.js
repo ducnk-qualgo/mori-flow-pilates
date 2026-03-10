@@ -94,12 +94,12 @@ const translations = {
     'pricing.btn2': 'GET STARTED',
     'pricing.btn3': 'JOIN NOW',
 
-    // CTA
-    'cta.label': '◆ YOUR JOURNEY STARTS HERE',
-    'cta.heading.1': 'First class is on us.',
-    'cta.heading.2': 'Come feel the difference.',
-    'cta.btn1': 'BOOK FREE TRIAL',
-    'cta.btn2': 'CONTACT US',
+    // Booking
+    'booking.label': '◆ BOOK A CLASS',
+    'booking.heading.1': 'Your first class is on us.',
+    'booking.heading.2': 'Reserve your spot below.',
+    'booking.desc': 'Fill in the form and we\'ll confirm your booking within a few hours. Towel and water are included with every class.',
+    'booking.contact.label': '◆ OR REACH US DIRECTLY',
 
     // Footer
     'footer.privacy': 'Privacy policy',
@@ -219,12 +219,12 @@ const translations = {
     'pricing.btn2': 'BẮT ĐẦU',
     'pricing.btn3': 'THAM GIA',
 
-    // CTA
-    'cta.label': '◆ HÀNH TRÌNH BẮT ĐẦU TỪ ĐÂY',
-    'cta.heading.1': 'Buổi đầu tiên miễn phí.',
-    'cta.heading.2': 'Hãy đến và cảm nhận.',
-    'cta.btn1': 'ĐẶT BUỔI THỬ MIỄN PHÍ',
-    'cta.btn2': 'LIÊN HỆ',
+    // Booking
+    'booking.label': '◆ ĐẶT LỊCH HỌC',
+    'booking.heading.1': 'Buổi đầu tiên miễn phí.',
+    'booking.heading.2': 'Đặt chỗ của bạn bên dưới.',
+    'booking.desc': 'Điền form và chúng tôi sẽ xác nhận lịch của bạn trong vài giờ. Khăn và nước được bao gồm trong mỗi buổi tập.',
+    'booking.contact.label': '◆ HOẶC LIÊN HỆ TRỰC TIẾP',
 
     // Footer
     'footer.privacy': 'Chính sách bảo mật',
