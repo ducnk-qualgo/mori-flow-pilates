@@ -25,7 +25,15 @@
     <!-- ============ HERO ============ -->
     <section class="hero" id="hero">
       <div class="hero__bg">
-        <img src="/images/studio-main.png" alt="Mori Flow Pilates studio with reformer machines" class="hero__img" />
+        <video
+          class="hero__video"
+          src="/videos/hero-bg.mp4"
+          poster="/images/studio-main.png"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
       </div>
       <div class="hero__content">
         <h1 class="hero__title">
@@ -422,7 +430,7 @@
     Cal("init", { origin: "https://app.cal.com" });
     Cal("inline", {
       elementOrSelector: "#cal-embed",
-      calLink: "YOUR_USERNAME",
+      calLink: "moriflow",
       layout: "month_view",
     });
     Cal("ui", { hideEventTypeDetails: false, layout: "month_view" });

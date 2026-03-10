@@ -30,10 +30,10 @@ gsap.ticker.add((time) => {
 gsap.ticker.lagSmoothing(0);
 
 // ============ HERO PARALLAX ============
-const heroImg = document.querySelector('.hero__img');
+const heroVideo = document.querySelector('.hero__video');
 
-if (heroImg) {
-  gsap.to(heroImg, {
+if (heroVideo) {
+  gsap.to(heroVideo, {
     yPercent: 20,
     scale: 1.1,
     ease: 'none',
