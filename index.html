@@ -5,12 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mori Flow Pilates — Reformer & Mat Pilates Studio</title>
   <meta name="description" content="Mori Flow Pilates is a boutique reformer and mat Pilates studio. Expert-led classes in a serene, beautifully designed space. Book your first class today." />
+  <meta name="theme-color" content="#1a1613" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mori Flow Pilates — Reformer & Mat Pilates Studio" />
+  <meta property="og:description" content="A boutique Pilates studio where mindful movement meets modern design. Expert-led reformer and mat classes." />
+  <meta property="og:image" content="/images/studio-main.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/vite.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://app.cal.com" />
+  <link rel="preload" as="image" type="image/webp" href="/images/studio-main.webp" fetchpriority="high" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <meta name="robots" content="index, follow" />
   <link rel="stylesheet" href="/src/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Mori Flow Pilates",
+    "description": "Mori Flow Pilates is a boutique reformer and mat Pilates studio. Expert-led classes in a serene, beautifully designed space.",
+    "telephone": "+84909123456",
+    "email": "hello@moriflow.vn",
+    "priceRange": "$$",
+    "image": "/images/studio-main.webp",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "5",
+      "bestRating": "5"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Pilates Classes",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reformer Pilates" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mat Flow" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Sessions" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Prenatal Pilates" } }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
+  <a href="#about" class="skip-link">Skip to main content</a>
   <div id="scroll-container">
 
     <!-- ============ HEADER ============ -->
@@ -23,17 +62,21 @@
     </header>
 
     <!-- ============ HERO ============ -->
+    <main>
     <section class="hero" id="hero">
       <div class="hero__bg">
         <video
           class="hero__video"
-          src="/videos/hero-bg.mp4"
-          poster="/images/studio-main.png"
+          poster="/images/studio-main.webp"
           autoplay
           muted
           loop
           playsinline
-        ></video>
+          preload="metadata"
+          aria-hidden="true"
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
       </div>
       <div class="hero__content">
         <h1 class="hero__title">
@@ -81,19 +124,31 @@
           </a>
         </div>
         <div class="collection__card collection__card--doors" data-speed="1.05">
-          <img src="/images/studio-main.png" alt="Reformer Pilates class" />
+          <picture>
+            <source srcset="/images/studio-main.webp" type="image/webp" />
+            <img src="/images/studio-main.png" alt="Reformer Pilates class" width="819" height="1024" loading="lazy" decoding="async" />
+          </picture>
           <span class="collection__card-label" data-i18n="classes.card.reformer">Reformer</span>
         </div>
         <div class="collection__card collection__card--windows" data-speed="0.95">
-          <img src="/images/yoga-area.png" alt="Mat Pilates class" />
+          <picture>
+            <source srcset="/images/yoga-area.webp" type="image/webp" />
+            <img src="/images/yoga-area.png" alt="Mat Pilates class" width="819" height="1024" loading="lazy" decoding="async" />
+          </picture>
           <span class="collection__card-label" data-i18n="classes.card.mat">Mat Flow</span>
         </div>
         <div class="collection__card collection__card--structural" data-speed="1.08">
-          <img src="/images/class-room.png" alt="Private Pilates session" />
+          <picture>
+            <source srcset="/images/class-room.webp" type="image/webp" />
+            <img src="/images/class-room.png" alt="Private Pilates session" width="819" height="1024" loading="lazy" decoding="async" />
+          </picture>
           <span class="collection__card-label" data-i18n="classes.card.private">Private</span>
         </div>
         <div class="collection__card collection__card--additional" data-speed="0.92">
-          <img src="/images/desk-area.png" alt="Prenatal Pilates class" />
+          <picture>
+            <source srcset="/images/desk-area.webp" type="image/webp" />
+            <img src="/images/desk-area.png" alt="Prenatal Pilates class" width="819" height="1024" loading="lazy" decoding="async" />
+          </picture>
           <span class="collection__card-label" data-i18n="classes.card.specialty">Specialty</span>
         </div>
       </div>
@@ -103,7 +158,10 @@
     <section class="showroom" id="studio">
       <div class="showroom__inner">
         <div class="showroom__image-wrap">
-          <img src="/images/studio-wall.png" alt="Mori Flow Pilates studio interior" class="showroom__img" />
+          <picture>
+            <source srcset="/images/studio-wall.webp" type="image/webp" />
+            <img src="/images/studio-wall.png" alt="Mori Flow Pilates studio interior" class="showroom__img" width="819" height="1024" loading="lazy" decoding="async" />
+          </picture>
           <div class="showroom__marker">
             <svg width="24" height="32" viewBox="0 0 24 32" fill="none"><circle cx="12" cy="10" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M12 16v10M8 22l4 4 4-4" stroke="currentColor" stroke-width="1.5"/></svg>
           </div>
@@ -193,10 +251,16 @@
     <section class="stories" id="stories">
       <div class="stories__images">
         <div class="stories__img-wrap stories__img-wrap--left">
-          <img src="/images/reception.png" alt="Mori Flow Pilates reception area" />
+          <picture>
+            <source srcset="/images/reception.webp" type="image/webp" />
+            <img src="/images/reception.png" alt="Mori Flow Pilates reception area" width="819" height="1024" loading="lazy" decoding="async" />
+          </picture>
         </div>
         <div class="stories__img-wrap stories__img-wrap--right">
-          <img src="/images/yoga-area.png" alt="Mori Flow Pilates mat area" />
+          <picture>
+            <source srcset="/images/yoga-area.webp" type="image/webp" />
+            <img src="/images/yoga-area.png" alt="Mori Flow Pilates mat area" width="819" height="1024" loading="lazy" decoding="async" />
+          </picture>
         </div>
       </div>
       <div class="stories__content">
@@ -212,7 +276,7 @@
             </button>
           </div>
         </div>
-        <div class="stories__carousel" id="stories-carousel">
+        <div class="stories__carousel" id="stories-carousel" aria-live="polite" aria-atomic="true">
           <div class="stories__slide stories__slide--active">
             <blockquote class="stories__quote" data-i18n="stories.quote1">"Mori Flow completely changed how I think about fitness. The reformer classes are challenging but the instructors make you feel so supported. I've never been stronger or more flexible."</blockquote>
             <div class="stories__author">
@@ -337,17 +401,19 @@
       </div>
     </section>
 
+    </main>
+
     <!-- ============ FOOTER ============ -->
     <footer class="footer" id="footer">
       <div class="footer__top">
         <div class="footer__socials">
-          <a href="#" class="footer__link">Instagram</a>
-          <a href="#" class="footer__link">Facebook</a>
-          <a href="#" class="footer__link">TikTok</a>
+          <a href="https://instagram.com/moriflow" target="_blank" class="footer__link" rel="noopener noreferrer">Instagram</a>
+          <a href="https://facebook.com/moriflow" target="_blank" class="footer__link" rel="noopener noreferrer">Facebook</a>
+          <a href="https://tiktok.com/@moriflow" target="_blank" class="footer__link" rel="noopener noreferrer">TikTok</a>
         </div>
         <div class="footer__legal">
-          <a href="#" class="footer__link" data-i18n="footer.privacy">Privacy policy</a>
-          <a href="#" class="footer__link" data-i18n="footer.terms">Terms & conditions</a>
+          <a href="#footer" class="footer__link" data-i18n="footer.privacy">Privacy policy</a>
+          <a href="#footer" class="footer__link" data-i18n="footer.terms">Terms & conditions</a>
         </div>
       </div>
       <div class="footer__brand">
@@ -356,7 +422,7 @@
     </footer>
 
     <!-- ============ FLOATING NAV ============ -->
-    <nav class="pill-nav" id="pill-nav">
+    <nav class="pill-nav" id="pill-nav" aria-label="Page navigation">
       <a href="#hero" class="pill-nav__logo" aria-label="Home">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path d="M4 16c4-8 12-8 16 0" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
@@ -369,16 +435,16 @@
         <span class="lang-toggle__divider">/</span>
         <span class="lang-toggle__inactive">VI</span>
       </button>
-      <button class="pill-nav__menu" id="menu-toggle" aria-label="Menu">
+      <button class="pill-nav__menu" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu-overlay">
         <span></span>
         <span></span>
       </button>
     </nav>
 
     <!-- ============ FULLSCREEN MENU ============ -->
-    <div class="menu-overlay" id="menu-overlay">
+    <div class="menu-overlay" id="menu-overlay" role="dialog" aria-modal="true" aria-label="Site navigation" aria-hidden="true">
       <div class="menu-overlay__content">
-        <nav class="menu-overlay__nav">
+        <nav class="menu-overlay__nav" aria-label="Main menu">
           <a href="#about" class="menu-overlay__link" data-i18n="menu.about">About</a>
           <a href="#classes" class="menu-overlay__link" data-i18n="menu.classes">Classes</a>
           <a href="#studio" class="menu-overlay__link" data-i18n="menu.studio">Studio</a>
@@ -386,8 +452,8 @@
           <a href="#booking" class="menu-overlay__link" data-i18n="menu.book">Book</a>
         </nav>
         <div class="menu-overlay__info">
-          <a href="#" class="menu-overlay__info-link">Instagram</a>
-          <a href="#" class="menu-overlay__info-link" data-i18n="menu.schedule">Schedule</a>
+          <a href="https://instagram.com/moriflow" target="_blank" class="menu-overlay__info-link" rel="noopener noreferrer">Instagram</a>
+          <a href="#booking" class="menu-overlay__info-link" data-i18n="menu.schedule">Schedule</a>
           <a href="tel:0909123456" class="menu-overlay__info-link">0909 123 456</a>
           <a href="mailto:hello@moriflow.vn" class="menu-overlay__info-link">hello@moriflow.vn</a>
         </div>
@@ -398,42 +464,54 @@
 
   <script type="module" src="/src/main.js"></script>
 
-  <!-- Cal.com Embed -->
-  <script type="text/javascript">
-    (function (C, A, L) {
-      let p = function (a, ar) { a.q.push(ar); };
-      let d = C.document;
-      C.Cal = C.Cal || function () {
-        let cal = C.Cal;
-        let ar = arguments;
-        if (!cal.loaded) {
-          cal.ns = {};
-          cal.q = cal.q || [];
-          d.head.appendChild(d.createElement("script")).src = A;
-          cal.loaded = true;
-        }
-        if (ar[0] === L) {
-          const api = function () { p(api, arguments); };
-          const namespace = ar[1];
-          api.q = api.q || [];
-          if (typeof namespace === "string") {
-            cal.ns[namespace] = cal.ns[namespace] || api;
-            p(cal.ns[namespace], ar);
-            p(cal, ["initNamespace", namespace]);
-          } else p(cal, ar);
-          return;
-        }
-        p(cal, ar);
-      };
-    })(window, "https://app.cal.com/embed/embed.js", "init");
+  <!-- Cal.com Embed — lazy-loaded when booking section enters viewport -->
+  <script type="module">
+    const calTarget = document.getElementById('cal-embed');
+    if (calTarget) {
+      const io = new IntersectionObserver((entries, observer) => {
+        if (!entries[0].isIntersecting) return;
+        observer.disconnect();
 
-    Cal("init", { origin: "https://app.cal.com" });
-    Cal("inline", {
-      elementOrSelector: "#cal-embed",
-      calLink: "moriflow",
-      layout: "month_view",
-    });
-    Cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+        (function (C, A, L) {
+          let p = function (a, ar) { a.q.push(ar); };
+          let d = C.document;
+          C.Cal = C.Cal || function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              const s = d.createElement("script");
+              s.src = A;
+              s.async = true;
+              d.head.appendChild(s);
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () { p(api, arguments); };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else p(cal, ar);
+              return;
+            }
+            p(cal, ar);
+          };
+        })(window, "https://app.cal.com/embed/embed.js", "init");
+
+        Cal("init", { origin: "https://app.cal.com" });
+        Cal("inline", {
+          elementOrSelector: "#cal-embed",
+          calLink: "moriflow",
+          layout: "month_view",
+        });
+        Cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+      }, { rootMargin: '200px' });
+      io.observe(calTarget);
+    }
   </script>
 </body>
 </html>

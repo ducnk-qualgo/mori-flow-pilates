@@ -12,7 +12,7 @@
   --sage: #6b7c5e;
   --sage-light: #8a9a7a;
   --grey: #2a2520;
-  --grey-light: #8a8278;
+  --grey-light: #665f59;
   --border: rgba(26, 22, 19, 0.1);
   --border-light: rgba(255, 255, 255, 0.15);
 
@@ -64,6 +64,12 @@ a {
   color: inherit;
 }
 
+picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 img {
   display: block;
   width: 100%;
@@ -79,10 +85,31 @@ button {
   font-family: inherit;
 }
 
+/* ---------- Skip Link (Accessibility) ---------- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 10000;
+  padding: 0.75rem 1.5rem;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 0 0 4px 4px;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* ---------- Section Label (Monospaced) ---------- */
 .section-label {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -100,7 +127,7 @@ button {
   align-items: center;
   gap: 0.6rem;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -195,7 +222,7 @@ button {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   color: var(--white);
@@ -595,7 +622,7 @@ button {
 
 .tag {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   padding: 0.4rem 0.8rem;
@@ -739,7 +766,7 @@ button {
 
 .stories__author-role {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   color: var(--grey-light);
@@ -809,7 +836,7 @@ button {
 
 .pricing__badge {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   color: var(--sage-light);
@@ -979,7 +1006,7 @@ button {
 
 .footer__link {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   color: var(--grey-light);
@@ -1038,7 +1065,7 @@ button {
 
 .pill-nav__label {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   color: var(--white);
@@ -1052,7 +1079,7 @@ button {
   align-items: center;
   gap: 0.25rem;
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   color: var(--white);
@@ -1172,7 +1199,7 @@ button {
 
 .menu-overlay__info-link {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 0.05em;
   transition: color 0.3s;
@@ -1180,6 +1207,18 @@ button {
 
 .menu-overlay__info-link:hover {
   color: var(--white);
+}
+
+/* ---------- OFF-SCREEN RENDERING OPTIMISATION ---------- */
+.collection,
+.showroom,
+.projects,
+.stories,
+.pricing,
+.booking,
+.footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
 }
 
 /* ---------- REVEAL ANIMATIONS ---------- */
